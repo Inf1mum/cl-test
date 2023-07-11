@@ -1,0 +1,45 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.4.xsd">
+
+
+    <changeSet id="1688997231" author="vadzimlazuk5@gmail.com">
+        <createTable tableName="humans">
+            <column autoIncrement="true" name="id" type="bigint">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="name" type="varchar(60)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="age" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+            <column name="birthday" type="date">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet id="1688997232" author="vadzimlazuk5@gmail.com">
+        <insert tableName="humans">
+            <column name="name">Ivan Petrov</column>
+            <column name="age">22</column>
+            <column name="birthday">2001-07-23</column>
+        </insert>
+        <insert tableName="humans">
+            <column name="name">Petr Lomov</column>
+            <column name="age">20</column>
+            <column name="birthday">2003-07-24</column>
+        </insert>
+        <insert tableName="humans">
+            <column name="name">Boris Sidorov</column>
+            <column name="age">19</column>
+            <column name="birthday">2002-07-25</column>
+        </insert>
+    </changeSet>
+
+
+
+
+</databaseChangeLog>

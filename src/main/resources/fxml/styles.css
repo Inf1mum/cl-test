@@ -1,0 +1,34 @@
+.btn-save {
+    -fx-background-color: #27ae60;
+    -fx-text-fill: white;
+}
+
+.btn-edit {
+    -fx-background-color: #6200ee;
+    -fx-text-fill: white;
+}
+
+.btn-delete {
+    -fx-background-color: #FF4742;
+    -fx-text-fill: white;
+}
+
+.btn-cancel {
+    -fx-background-color: #FF4742;
+    -fx-text-fill: white;
+}
+
+.tree-table-row-cell {
+    -fx-background-color: white;
+}
+.tree-table-row-cell:selected {
+    -fx-background-color: #6697c9;
+}
+
+.tree-table-row-cell:odd {
+    -fx-background-color: #d9d9d9;
+}
+
+.tree-table-row-cell:selected:odd {
+    -fx-background-color: #4d7498;
+}

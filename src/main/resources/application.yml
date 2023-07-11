@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: "jdbc:mysql://localhost:3306/cl?createDatabaseIfNotExist=true"
+    username: "root"
+    password: "admin"
+  liquibase:
+    enabled: true
+    drop-first: false
+    change-log: classpath:/db/changelog/master.yaml
+    default-schema: cl

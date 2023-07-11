@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.HumansTabController">
+    <children>
+      <TreeTableView fx:id="humansView" prefHeight="400.0" prefWidth="600.0">
+        <columns>
+          <TreeTableColumn fx:id="nameColumn" prefWidth="104.0" text="Name" />
+          <TreeTableColumn fx:id="ageColumn" prefWidth="77.0" text="Age" />
+          <TreeTableColumn fx:id="birthdateColumn" prefWidth="117.0" text="Birthday" />
+        </columns>
+      </TreeTableView>
+      <ButtonBar prefHeight="40.0" prefWidth="200.0">
+        <buttons>
+          <Button mnemonicParsing="false" onMouseClicked="#addHuman" styleClass="btn-save" text="Add"/>
+          <Button mnemonicParsing="false" onMouseClicked="#editHuman" styleClass="btn-edit" text="Edit" />
+          <Button mnemonicParsing="false" onMouseClicked="#deleteHuman" styleClass="btn-delete" text="Delete" />
+        </buttons>
+         <VBox.margin>
+            <Insets right="10.0" />
+         </VBox.margin>
+      </ButtonBar>
+    </children>
+</VBox>
